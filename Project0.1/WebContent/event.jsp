@@ -29,6 +29,13 @@ h1 {
 	margin: 10px 10px;
 	float: left;
 }
+p {
+	margin-left: 10px;
+	text-align: center;
+	font-size: 50px;
+	margin: 20px;
+	color: #6eceda;
+}
 .int-area {
 	width: 700px;
 	float: left;
@@ -98,53 +105,69 @@ h1 {
 .clear1 {
 	clear: right;
 }
-.ebox1 {
+.eve-list {
+	list-style: none;
+	padding: 0;
+}
+.eve-list li {
+	float: left;
+	padding: 0;
+	margin: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.eve-list img {
+	margin: 0;
+	padding: 0;
+	float: left;
+	z-index: 5;
+	width: 310px;
+	height: 201px;
+	border: 1px solid black;
+}
+.photo {
+	float: left;
+	margin: 25px;
+	margin-top: 10px;
+	background-color: white;
+	width: 350px;
+	height: 300px;
+	font-size: 12px;
+	text-align: center;
+	color: black;
+	text-decoration-type: none;
+}
+.photo1 {
 	clear: left;
-	width: 310px;
-	height: 500px;
-	margin-left: 50px;
-	margin-top: 20px;
-	border: 1px solid black;
-}
-.ebox2 {
-	width: 310px;
-	height: 500px;
-	margin: 20px 90px;
-	border: 1px solid black;
 	float: left;
+	margin: 25px;
+	margin-top: 10px;
+	background-color: white;
+	width: 350px;
+	height: 300px;
+	font-size: 12px;
+	text-align: center;
+	color: black;
+	text-decoration-type: none;
 }
-.ebox3 {
-	width: 310px;
-	height: 500px;
-	margin-right: 28px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	border: 1px solid black;
-	float: right;
-}
-.ename1 {
-	margin-left: 82px; 
-	margin-top: 30px;
-	font-size: 30px;
-	text-decoration: none;
-	color: #6eceda;
-}
-.ename2 {
-	margin-top: 30px;
-	margin-left: 165px;
-	font-size: 30px;
-	text-decoration: none;
-	color: #6eceda;
-}
-.ename3 {
-	margin-top: 30px;
-	margin-left: 50px;
-	font-size: 30px;
-	text-decoration: none;
-	color: #6eceda;
-}
-.sec {
+.title {
 	float: left;
+	margin-left: 150px;
+	text-decoration-type: none;
+	font-family: 'Nanum Gothic', sans-serif;color: #6eceda;
+}
+.title1 {
+	float: left;
+	margin-left: 300px;
+	text-decoration-type: none;
+	font-family: 'Nanum Gothic', sans-serif;color: #6eceda;
+}
+.title2 {
+	float: left;
+	margin-left: 335px;
+	text-decoration-type: none;
+	font-family: 'Nanum Gothic', sans-serif;
+	color: #6eceda;
 }
 </style>
 </head>
@@ -169,37 +192,42 @@ h1 {
 				<ul>
 					<li><a href="movie.jsp">영화</a></li>
 					<li><a href="ticket.jsp">예매/취소</a></li>
-					<li><a href="movie.jsp">영화관</a></li>
+					<li><a href="theater.jsp">영화관</a></li>
 					<li><a href="event.jsp">이벤트</a></li>
 				</ul>
 			</nav>
 			<hr class="clear">
 		</header>
 		<main>
-			<section class="sec">
-				<a href="Levent.jsp"><div class="ename1">롯데시네마 이벤트</div></a>
+			<a href="Levent.jsp"><h2 class="title">롯데시네마</h2></a>
+			<a href="Cevent.jsp"><h2 class="title1">CGV</h2></a>
+			<a href="Mevent.jsp"><h2 class="title2">메가박스</h2></a>
+				<ul class="eve-list">
 				<a href="Levent.jsp">
-					<div class="ebox1">
-						롯데시네마 이벤트
+					<div class="photo1">
+						<li>
+							<img src="images/lLogo.PNG">
+						</li>
+						롯데시네마 이벤트 바로가기
 					</div>
 				</a>
-			</section>
-			<section class="sec">
-				<a href="Cevent.jsp"><div class="ename2">CGV 이벤트</div></a>
 				<a href="Cevent.jsp">
-					<div class="ebox2">
-						CGV 이벤트
+					<div class="photo">
+						<li>
+							<img src="images/cLogo.PNG">
+						</li>
+						CGV 이벤트 바로가기
 					</div>
 				</a>
-			</section>
-			<section class="sec">
-				<a href="Mevent.jsp"><div class="ename3">메가박스 이벤트</div></a>
 				<a href="Mevent.jsp">
-					<div class="ebox3">
-						메가박스 이벤트
+					<div class="photo">
+						<li>
+							<img src="images/mLogo.PNG">
+						</li>
+						메가박스 이벤트 바로가기
 					</div>
 				</a>
-			</section>
+				</ul>
 		</main>
 		<footer>
 			<hr class="clear">

@@ -161,7 +161,7 @@ h1 {
 				<ul>
 					<li><a href="movie.jsp">영화</a></li>
 					<li><a href="ticket.jsp">예매/취소</a></li>
-					<li><a href="movie.jsp">영화관</a></li>
+					<li><a href="theater.jsp">영화관</a></li>
 					<li><a href="event.jsp">이벤트</a></li>
 				</ul>
 			</nav>

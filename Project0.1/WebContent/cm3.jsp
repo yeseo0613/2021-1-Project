@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Join</title>
+<title>파이프라인</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
@@ -16,6 +16,13 @@
 	width: 1200px;
 	margin: 20px auto;
 	padding: 20px;
+}
+p {
+	font-size: 30px;
+	text-align: center;
+	color: #6eceda;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-decoration-type: none;
 }
 h5 {
 	margin-right: 20px;
@@ -98,69 +105,49 @@ h1 {
 .clear1 {
 	clear: right;
 }
-.form {
-	width: 400px;
-	margin: 20px auto;
+.info img {
+	width: 450px;
+	height: 500px;
+	float: left;
+	margin: 30px 30px 30px 150px;
 }
-.form h2 {
-	font-size: 80px;
-	text-align: center;
+.info p {
+	width: 500px;
+	font-size: 22px;
+	font-family: 'Nanum Gothic', sans-serif;
+	color: black;
+	text-aligh: center;
+	float: left;
+}
+.info form {
+	width: 200px;
+	float: left;
+}
+.info h3 {
 	margin-top: 30px;
-	margin-left: 38px;
 	margin-bottom: 10px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 50px;
 	color: #6eceda;
+	float:left;
 }
-.lable {
-	margin-left: 15px;
-	font-size: 20px;
-	color: #6eceda;
+.button {
+	width: 450px;
+	clear: left;
+	margin-top: 30px;
+	margin-left: 140px;
+	margin-bottom: 50px;
 }
-.form input {
-	margin: 10px;
+.button input {
 	width: 100%;
-	padding: 20px 10px 10px;
-	background-color: white;
-	border: 3px solid #6eceda;
-	color : rgb(128 128 128); 
-	font-size: 18px;
+	padding: 10px 10px 10px;
+	background-color: #6eceda;;
+	border: 1px solid #6eceda;
+	font-size: 30px;
 	outline: none;
-}
-.submit {
-	width: 400px;
-	margin: 20px auto;
-}
-.submit input {
-	margin: 10px;
-	width: 107%;
-	padding: 20px 10px 10px;
-	background-color: #6eceda;
-	border: 3px solid #6eceda;
-	color : white;
-	font-size: 18px;
-	outline: none;
-	margin-bottom: 30px;
-}
-.check {
-	width: 400px;
-	margin: 20px auto;
-}
-.check h2 {
-	font-size: 80px;
-	text-align: center;
-	margin-top: 30px;
-	margin-left: 38px;
-	margin-bottom: 10px;
-	color: #6eceda;
-}
-.check input {
-	width: 10%;
-	border: 3px solid #6eceda;
-	color : rgb(128 128 128);
-	font-size: 10px;
-}
-.check p {
-	font-size: 14px;
-	margin-left: 15px;
+	margin-left: 10px;
+	color: white;
+	clear: left;
 }
 </style>
 </head>
@@ -191,38 +178,20 @@ h1 {
 			<hr class="clear">
 		</header>
 		<main>
-			<form action="">
-				<div class="form">
-					<h2>회원가입</h2>
-					<label for="name" class="lable">이름</label>
-					<input type="text" name="name" autocomplete="off" required>
+			<div class="info">
+				<img src="images/cm3.PNG">
+				<h3>파이프라인</h3>
+				<div>
+					<p>손만 대면 대박을 터트리는 도유 업계 최고 천공기술자 ‘핀돌이’는 수천억의 기름을 빼돌리기 위해 거대한 판을 짠 
+					대기업 후계자 ‘건우’의 거부할 수 없는 제안에 빠져 위험천만한 도유 작전에 합류한다. 
+					프로 용접공 '접새', 땅 속을 장기판처럼 꿰고 있는 '나과장', 괴력의 인간 굴착기 '큰삽', 이 모든 이들을 감시하는 '카운터'까지! 
+					그러나 저마다 다른 목적을 가진 이들이 서로를 속고 속이면서 계획은 예상치 못한 방향으로 흘러가기 시작하는데... 
+					인생 역전을 꿈꾸는 여섯 명의 도유꾼들 그들의 막장 팀플레이가 시작된다!</p>
 				</div>
-				<div class="form">
-					<label for="id" class="lable">아이디</label>
-					<input type="text" name="id" autocomplete="off" required>
+				<div class="button">
+					<input type="submit" value="예매하기">
 				</div>
-				<div class="form">
-					<label for="pwd" class="lable">비밀번호</label>
-					<input type="password" name="pwd" autocomplete="off" required>
-				</div>
-				<div class="form">
-					<label for="repwd" class="lable">비밀번호 재확인</label>
-					<input type="password" name="repwd" autocomplete="off" required>
-				</div>
-				<div class="form">
-					<label for="birth" class="lable">생년월일</label>
-					<input type="date" name="repwd" autocomplete="off" required>
-				</div>
-				<div class="check">
-					<label for="theater" class="lable">선호 영화관 선택<p>영화표 예매 시 선호 영화관을 먼저 보여줍니다.</p></label>
-					<lable><input type="checkbox" value="l_t">롯데시네마</lable>
-					<lable><input type="checkbox" value="C_t">CGV</lable>
-					<lable><input type="checkbox" value="m_t">메가박스</lable>
-				</div>
-				<div class="submit">
-					<input type="submit" value="회원가입">
-				</div>
-			</form>
+			</div>
 		</main>
 		<footer>
 			<hr class="clear">

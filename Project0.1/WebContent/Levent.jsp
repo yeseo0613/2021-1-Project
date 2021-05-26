@@ -105,26 +105,72 @@ p {
 .clear1 {
 	clear: right;
 }
-.ebox1 {
-	width: 310px;
-	height: 500px;
-	margin-left: 50px;
-	margin-top: 10px;
-	float: left;
+.eve-list {
+	list-style: none;
+	padding: 0;
 }
-.ebox2 {
-	width: 310px;
-	height: 500px;
-	margin: 10px 90px;
+.eve-list li {
 	float: left;
+	padding: 0;
+	margin: 20px;
+	overflow: hidden;
+	position: relative;
 }
-.ebox3 {
+.eve-list img {
+	margin: 0;
+	padding: 0;
+	float: left;
+	z-index: 5;
 	width: 310px;
-	height: 500px;
-	margin-right: 28px;
-	margin-top: 10px;
-	margin-bottom: 40px;
-	float: right;
+	height: 201px;
+	border: 1px solid black;
+}
+.eve-list .caption {
+	position: absolute;
+	top: 200px;
+	width: 311px;
+	height: 200px;
+	padding-top: 20px;
+	background: rgba(0,0,0,0.6);
+	opacity: 0;
+	transition: all 0.6s ease-in-out;
+	z-index: 10;
+}
+.eve-list li:hover .caption {
+	opacity: 1;
+	transform: translateY(-200px);
+}
+.caption h3 {
+	font-size: 18px;
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.01);
+}
+.caption h4 {
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.01);
+	font-size: 16px;
+}
+.photo {
+	float: left;
+	margin: 25px;
+	background-color: white;
+	width: 350px;
+	height: 300px;
+	font-size: 12px;
+	text-align: center;
+}
+.photo1 {
+	clear: left;
+	float: left;
+	margin: 25px;
+	background-color: white;
+	width: 350px;
+	height: 300px;
+	font-size: 12px;
+	text-align: center;
 }
 </style>
 </head>
@@ -148,7 +194,7 @@ p {
 				<ul>
 					<li><a href="movie.jsp">영화</a></li>
 					<li><a href="ticket.jsp">예매/취소</a></li>
-					<li><a href="movie.jsp">영화관</a></li>
+					<li><a href="theater.jsp">영화관</a></li>
 					<li><a href="event.jsp">이벤트</a></li>
 				</ul>
 			</nav>
@@ -156,27 +202,92 @@ p {
 		</header>
 		<main>
 			<p>롯데시네마 이벤트</p>
-			<section>
-				<a href="Levent1.jsp">
-					<div>
-						<img src="Levent1.PNG" class="ebox1">
-					</div>
-				</a>
-			</section>
-			<section>
-				<a href="Levent2.jsp">
-					<div>
-						<img src="Levent2.PNG" class="ebox2">
-					</div>
-				</a>
-			</section>
-			<section>
-				<a href="Levent3.jsp">
-					<div>
-						<img src="Levent3.PNG" class="ebox3">
-					</div>
-				</a>
-			</section>
+			<ul class="eve-list">
+				<div class="photo">
+					<li>
+						<img src="images/l1.PNG">
+						<div class="caption">
+							<h3>토토리!우리 둘만의 여름<br>현장 경품 증정 이벤트</h3>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo">
+					<li>
+						<img src="images/l2.PNG">
+						<div class="caption">
+							<h3>브리짓 존스의 일기<br>현장 경품 이벤트</h3>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo">
+					<li>
+						<img src="images/l3.PNG">
+						<div class="caption">
+							<h3>쿠사마 야요이:무한의 세계<br>개봉 기념 현장 증정 이벤트</h3>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo1">
+					<li>
+						<img src="images/l4.PNG">
+						<div class="caption">
+							<h3>애플 시사회&무대인사</h3>
+							<h4>애플 스페셜 GV 이벤트</h4>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo">
+					<li>
+						<img src="images/l5.PNG">
+						<div class="caption">
+							<h3>애플 시사회&무대인사</h3>
+							<h4>롯데시네마 아르떼미리 위켄드</h4>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo">
+					<li>
+						<img src="images/l6.PNG">
+						<div class="caption">
+							<h3>시사회&무대인사</h3>
+							<h4>혼자 사는 사람들 무대 인사</h4>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo1">
+					<li>
+						<img src="images/l7.PNG">
+						<div class="caption">
+							<h3>씨네클래스 byLOCA</h3>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo">
+					<li>
+						<img src="images/l8.PNG">
+						<div class="caption">
+							<h3>영화사 취업 설명회 byLOCA</h3>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+				<div class="photo">
+					<li>
+						<img src="images/l9.PNG">
+						<div class="caption">
+							<h3>스웨그에이지:외쳐 조선! 단독 개봉</h3>
+						</div>
+					</li>
+					기간 : 2021.06.01~2021.06.30
+				</div>
+			</ul>
 		</main>
 		<footer>
 			<hr class="clear">

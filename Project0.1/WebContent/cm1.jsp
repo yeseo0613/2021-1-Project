@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Join</title>
+<title>크루엘라</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
@@ -16,6 +16,13 @@
 	width: 1200px;
 	margin: 20px auto;
 	padding: 20px;
+}
+p {
+	font-size: 30px;
+	text-align: center;
+	color: #6eceda;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-decoration-type: none;
 }
 h5 {
 	margin-right: 20px;
@@ -98,69 +105,49 @@ h1 {
 .clear1 {
 	clear: right;
 }
-.form {
-	width: 400px;
-	margin: 20px auto;
+.info img {
+	width: 450px;
+	height: 500px;
+	float: left;
+	margin: 30px 30px 30px 150px;
 }
-.form h2 {
-	font-size: 80px;
-	text-align: center;
+.info p {
+	width: 500px;
+	font-size: 22px;
+	font-family: 'Nanum Gothic', sans-serif;
+	color: black;
+	text-aligh: center;
+	float: left;
+}
+.info form {
+	width: 200px;
+	float: left;
+}
+.info h3 {
 	margin-top: 30px;
-	margin-left: 38px;
 	margin-bottom: 10px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 50px;
 	color: #6eceda;
+	float:left;
 }
-.lable {
-	margin-left: 15px;
-	font-size: 20px;
-	color: #6eceda;
+.button {
+	width: 450px;
+	clear: left;
+	margin-top: 30px;
+	margin-left: 140px;
+	margin-bottom: 50px;
 }
-.form input {
-	margin: 10px;
+.button input {
 	width: 100%;
-	padding: 20px 10px 10px;
-	background-color: white;
-	border: 3px solid #6eceda;
-	color : rgb(128 128 128); 
-	font-size: 18px;
+	padding: 10px 10px 10px;
+	background-color: #6eceda;;
+	border: 1px solid #6eceda;
+	font-size: 30px;
 	outline: none;
-}
-.submit {
-	width: 400px;
-	margin: 20px auto;
-}
-.submit input {
-	margin: 10px;
-	width: 107%;
-	padding: 20px 10px 10px;
-	background-color: #6eceda;
-	border: 3px solid #6eceda;
-	color : white;
-	font-size: 18px;
-	outline: none;
-	margin-bottom: 30px;
-}
-.check {
-	width: 400px;
-	margin: 20px auto;
-}
-.check h2 {
-	font-size: 80px;
-	text-align: center;
-	margin-top: 30px;
-	margin-left: 38px;
-	margin-bottom: 10px;
-	color: #6eceda;
-}
-.check input {
-	width: 10%;
-	border: 3px solid #6eceda;
-	color : rgb(128 128 128);
-	font-size: 10px;
-}
-.check p {
-	font-size: 14px;
-	margin-left: 15px;
+	margin-left: 10px;
+	color: white;
+	clear: left;
 }
 </style>
 </head>
@@ -191,38 +178,24 @@ h1 {
 			<hr class="clear">
 		</header>
 		<main>
-			<form action="">
-				<div class="form">
-					<h2>회원가입</h2>
-					<label for="name" class="lable">이름</label>
-					<input type="text" name="name" autocomplete="off" required>
+			<div class="info">
+				<img src="images/cm1.PNG">
+				<h3>크루엘라</h3>
+				<div>
+					<p>처음부터 난 알았어. 내가 특별하단 걸 그게 불편한 인간들도 있겠지만 모두의 비위를 맞출 수는 없잖아?
+				 	그러다 보니 결국, 학교를 계속 다닐 수가 없었지 우여곡절 런던에 오게 된 나, 
+				 	에스텔라는 재스퍼와 호레이스를 운명처럼 만났고 나의 뛰어난 패션 감각을 이용해 
+				 	완벽한 변장과 빠른 손놀림으로 런던 거리를 싹쓸이 했어 도둑질이 지겹게 느껴질 때쯤,
+				 	꿈에 그리던 리버티 백화점에 낙하산(?)으로 들어가게 됐어 거리를 떠돌았지만 패션을 향한 나의 열정만큼은 언제나 진심이었거든 
+				 	근데 이게 뭐야, 옷에는 손도 못 대보고 하루 종일 바닥 청소라니 인내심에 한계를 느끼고 있을 때, 
+				 	런던 패션계를 꽉 쥐고 있는 남작 부인이 나타났어 천재는 천재를 알아보는 법! 
+				 	난 남작 부인의 브랜드 디자이너로 들어가게 되었지 꿈을 이룰 것 같았던 순간도 잠시, 
+				 	세상에 남작 부인이 ‘그런 사람’이었을 줄이야… 그래서 난 내가 누군지 보여주기로 했어 잘가, 에스텔라 난 이제 크루엘라야!</p>
 				</div>
-				<div class="form">
-					<label for="id" class="lable">아이디</label>
-					<input type="text" name="id" autocomplete="off" required>
+				<div class="button">
+					<input type="submit" value="예매하기">
 				</div>
-				<div class="form">
-					<label for="pwd" class="lable">비밀번호</label>
-					<input type="password" name="pwd" autocomplete="off" required>
-				</div>
-				<div class="form">
-					<label for="repwd" class="lable">비밀번호 재확인</label>
-					<input type="password" name="repwd" autocomplete="off" required>
-				</div>
-				<div class="form">
-					<label for="birth" class="lable">생년월일</label>
-					<input type="date" name="repwd" autocomplete="off" required>
-				</div>
-				<div class="check">
-					<label for="theater" class="lable">선호 영화관 선택<p>영화표 예매 시 선호 영화관을 먼저 보여줍니다.</p></label>
-					<lable><input type="checkbox" value="l_t">롯데시네마</lable>
-					<lable><input type="checkbox" value="C_t">CGV</lable>
-					<lable><input type="checkbox" value="m_t">메가박스</lable>
-				</div>
-				<div class="submit">
-					<input type="submit" value="회원가입">
-				</div>
-			</form>
+			</div>
 		</main>
 		<footer>
 			<hr class="clear">

@@ -17,6 +17,13 @@
 	margin: 20px auto;
 	padding: 20px;
 }
+p {
+	font-size: 30px;
+	text-align: center;
+	color: #6eceda;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-decoration-type: none;
+}
 h5 {
 	margin-right: 20px;
 	color: rgb(128 128 128);
@@ -114,31 +121,52 @@ h1 {
 	width: 300px;
 	height: 300px;
 	margin-left: 45px;
-	border: 1px solid black;
 	text-align: center;
+}
+.box3 img {
+	width: 300px;
+	height: 300px;
+}
+.box3 p {
+	text-decoration: none;
 }
 .box4 {
 	float: left;
 	width: 300px;
 	height: 300px;
-	margin: 0 112px;
+	margin-left: 120px;
 	margin-bottom: 30px;
-	border: 1px solid black;
 	text-align: center;
+}
+.box4 img {
+	width: 300px;
+	height: 300px;
+}
+.box4 p {
+	text-decoration: none;
 }
 .box5 {
 	float: right;
 	width: 300px;
 	height: 300px;
-	margin-bottom: 30px;
+	margin-bottom: 150px;
 	margin-right: 20px;
-	border: 1px solid black;
 	text-align: center;
+}
+.box5 img {
+	width: 300px;
+	height: 300px;
+}
+.box5 p {
+	text-decoration: none;
 }
 #foot {
 	margin-left: 45px;
 }
 .clear1 {
+	clear: right;
+}
+.pclear {
 	clear: right;
 }
 </style>
@@ -163,7 +191,7 @@ h1 {
 				<ul>
 					<li><a href="movie.jsp">영화</a></li>
 					<li><a href="ticket.jsp">예매/취소</a></li>
-					<li><a href="movie.jsp">영화관</a></li>
+					<li><a href="theater.jsp">영화관</a></li>
 					<li><a href="event.jsp">이벤트</a></li>
 				</ul>
 			</nav>
@@ -180,30 +208,33 @@ h1 {
 					상영 예정 영화
 				</div>
 			</section>
-			<section>
+			<section class="box3">
 				<a href="Levent.jsp">
-				<div class="box3">
-					롯데시네마 이벤트
+				<p>롯데시네마 이벤트</p>
+				<div>
+					<img src="images/lLogo.PNG">
 				</div>
 				</a>
 			</section>
-			<section>
+			<section class="box4">
 				<a href="Cevent.jsp">
-				<div class="box4">
-					cgv 이벤트
+				<p>CGV 이벤트</p>
+				<div>
+					<img src="images/cLogo.PNG">
 				</div>
 				</a>				
 			</section>
-			<section>
+			<section class="box5">
 				<a href="Mevent.jsp">
-				<div class="box5">
-					메가박스 이벤트
+				<p>메가박스 이벤트</p>
+				<div>
+					<img src="images/mLogo.PNG">
 				</div>	
 				</a>			
 			</section>
 		</main>
 		<footer>
-			<hr class="clear">
+			<hr class="pclear">
 			<h5 id="foot">회사소개 | 인재채용 | 이용약관 | 개인정보처리방침 | 고객센터</h5>
 		</footer>
 	</div>
