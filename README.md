@@ -1,2 +1,3 @@
 # 2021-1-Project
-Ticket service project
+영화관에 대한 정보를 얻을 수 있고, 영화 티켓을 예매 할 수 있는 웹서비스.
+
