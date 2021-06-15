@@ -37,6 +37,11 @@ h1 {
 	margin: 10px 10px;
 	float: left;
 }
+h3 {
+	color: red;
+	font-size: 30px;
+	margin-left: 330px;
+}
 .int-area {
 	width: 700px;
 	float: left;
@@ -196,7 +201,7 @@ th {
 						<td>${member.seat }    </td>
 			</table>
 			<%}else { %>
-			 	${result }
+			 	<h3>${result }</h3>
 			 <%} %>  
 		</main>
 		<footer>

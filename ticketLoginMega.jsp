@@ -188,19 +188,19 @@ select {
 		</header>
 		<main>
 			<p class="name">영화 예매</p>
-			<form action="reservation.do" method="get">
+			<form action="reservation.do" method="post">
 				<div class="form">
 					<h3>지역 선택</h3>
 					<select name="location">
 						<option>지역을 선택하세요</option>
 						<option>------------------------------</option>
-						<option value="서울">서울</option>
+						<option value="Seoul">서울</option>
 					</select>
 				</div>
 				<div class="form2">
 				<h3>영화관 선택</h3>
 					<select name="theater">
-						<option value="메가박스 코엑스점">메가박스 코엑스점</option>
+						<option value="MEGABOX Coex">메가박스 코엑스점</option>
 					</select>
 				</div>
 				<div class="form2">
@@ -208,7 +208,7 @@ select {
 					<select name="movie">
 						<option>영화를 선택하세요</option>
 						<option>------------------------------</option>
-						<option value="크루엘라">크루엘라</option>
+						<option value="Cruella">크루엘라</option>
 					</select>
 				</div>
 				<div class="form1">
@@ -216,9 +216,9 @@ select {
 					<select name="date">
 						<option>날짜를 선택하세요</option>
 						<option>------------------------------</option>
-						<option value="6월17일">6월 17일</option>
-						<option value="6월18일">6월 18일</option>
-						<option value="6월19일">6월 19일</option>
+						<option value="6-17">6월 17일</option>
+						<option value="6-18">6월 18일</option>
+						<option value="6-19">6월 19일</option>
 					</select>
 				</div>
 				<div class="form2">
